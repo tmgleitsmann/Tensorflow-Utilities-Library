@@ -21,3 +21,9 @@ Most of Tensorflow's APIs are incredibly low level with horrendous documentation
 *functions*
 <br />
 * **dunder call overridden:** Can now call on the class itself to retrieve dataset & validation set as long as class has been properly initialized.
+
+*examples*
+<br />
+initialization: loader_obj = DataLoader(CSV, BATCH_SIZE, width=224, height=224, channels=3, train_test_split=0.9, aug_flag=True)
+<br />
+dataset retrieval: train_data, val_data = loader_obj()
