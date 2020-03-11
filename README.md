@@ -20,7 +20,7 @@ Most of Tensorflow's APIs are incredibly low level with horrendous documentation
 
 *functions*
 <br />
-* **dunder call overridden:** Can now call on the class itself to retrieve dataset & validation set as long as class has been properly initialized.
+* **dunder call overridden:** Can now call on the class itself to retrieve dataset & validation set as long as class has been properly initialized. Return type => <tensorflow.python.data.ops.dataset_ops.BatchDataset>
 
 *examples*
 <br />
