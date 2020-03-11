@@ -7,9 +7,8 @@ Most of Tensorflow's APIs are incredibly low level with horrendous documentation
 **csv_to_dataset**
 <br />description: Load in CSV data directly into a tensorflow dataset object. 
 <br />CSV data must be in the format : <br />
-1. First column is ignored. Class assumes column indexes images & labels numerically.
-2. Second column is path to images. Needs to be path/image.jpg .
-3. Third column are the labels. Labels are unchanged during the creation process.
+2. First column is path to images. Needs to be path/image.jpg.
+3. Second column are the labels. Labels are unchanged during the creation process.
 <br />args:
 * csv_path = posix path to CSV file
 * batch_size = number : used to create dataset objects
