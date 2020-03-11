@@ -60,6 +60,7 @@ class DataLoader:
       images_list, labels_list, train_size=self.split, random_state=100)
 
     train_data = tf.data.Dataset.from_tensor_slices((tf.constant(train_filenames), tf.constant(train_labels))).map(self.pre_processing).shuffle(buffer_size=10000).batch(self.batch_size)
+    self.aug_flag = False
     val_data = tf.data.Dataset.from_tensor_slices((tf.constant(val_filenames), tf.constant(val_labels))).map(self.pre_processing).batch(self.batch_size)
     return train_data, val_data
 
