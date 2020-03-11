@@ -24,6 +24,6 @@ Most of Tensorflow's APIs are incredibly low level with horrendous documentation
 
 *examples*
 <br />
-initialization: loader_obj = DataLoader(CSV, BATCH_SIZE, width=224, height=224, channels=3, train_test_split=0.9, aug_flag=True)
+initialization: loader_obj = DataLoader(CSV, BATCH_SIZE, width=224, height=224, train_test_split=0.9, aug_flag=True)
 <br />
 dataset retrieval: train_data, val_data = loader_obj()
