@@ -34,11 +34,17 @@ dataset retrieval: train_data, val_data = loader_obj()
 **scale_bounding_boxes**
 <br />description: Scales your bounding box information from 0-255 to 0-1. 
 <br />args:
-* csv_path = posix path to CSV file
+* csv_path = posix path to CSV file 
+
+<br />
+
 **denorm_numpy_image**
 <br />description: Reverts your numpy image tensor to values between 0-255
 <br />args:
 * image = tensor that contains an image numpy
+
+<br />
+
 **denorm_numpy_labels**
 <br />description: Reverts your numpy label tensor to be scaled by the width and height args
 <br />args:
